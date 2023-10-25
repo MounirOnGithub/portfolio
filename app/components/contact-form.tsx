@@ -15,16 +15,14 @@ export default class ContactForm extends Component {
           Formulaire de contact
         </h3>
 
-        <div className="flex justify-center shadow-xl p-10">
-          <form action="">
-            <div className="flex flex-row">
+        <div className="shadow-xl p-10">
+            <div className="flex">
               <input className="rounded mr-4" type="text" placeholder="Objet" name="subject" id="subject" />
               <input className="rounded" type="email" placeholder="E-mail" name="email" id="email" />
             </div>
-            <div className="flex flex-row py-6">
-              <textarea className="rounded" name="message" id="message" placeholder="Entrez votre message..." cols={120} rows={8}/>
+            <div className="flex py-6">
+              <textarea className="rounded" name="message" id="message" placeholder="Entrez votre message..." cols={100} rows={8}/>
             </div>
-          </form>
         </div>
       </div>
     )
