@@ -1,6 +1,6 @@
 import { Roboto_Slab } from 'next/font/google'
 import './globals.css'
-import Navbar from "./components/navbar";
+import Navbar from "@/app/components/navbar";
 
 const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 
