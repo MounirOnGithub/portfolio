@@ -38,7 +38,7 @@ export default class Index extends Component {
     render(): ReactNode {
         return (
             <Layout>
-                <div className={"container mx-auto"}>
+                <div className={"container md:mx-auto"}>
                     <ExperiencesSection experiences={this.experiencesArray} />
                 </div>
                 <div className={"flex justify-center"}>

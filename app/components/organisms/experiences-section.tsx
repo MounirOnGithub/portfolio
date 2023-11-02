@@ -12,9 +12,9 @@ export default class ExperiencesSection extends Component<{ experiences: Experie
     render() {
         return (
             <div>
-                <Title title={"Expériences"}/>
+                <Title title={"Expériences"} />
 
-                <div className={"flex space-x-6"}>
+                <div className={"flex flex-wrap md:space-x-6"}>
                     {this.experienceCards}
                 </div>
             </div>
