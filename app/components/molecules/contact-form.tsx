@@ -1,11 +1,11 @@
 import { Component, ReactNode } from "react";
-import Title from "@/app/components/title";
+import Title from "@/app/components/atoms/title";
 
 export default class ContactForm extends Component {
   render(): ReactNode {
     return (
       <div className="md:w-[50%] py-6">
-        <Title title={"Contactez-moi"} />
+        <Title title={"Contactez-moi"}/>
 
         <div className="flex flex-wrap shadow-2xl p-10">
             <div>

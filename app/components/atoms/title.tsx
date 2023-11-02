@@ -1,6 +1,6 @@
 import {Component, ReactNode} from 'react'
 
-export default class Title extends Component {
+export default class Title extends Component<{ title: string }> {
     render(): ReactNode {
         return (
             <h3 className="
