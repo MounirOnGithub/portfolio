@@ -2,6 +2,8 @@ import { Component, ReactNode } from "react";
 import Layout from "../app/layout"
 import ContactForm from "../app/components/molecules/contact-form";
 import ExperiencesSection from "@/app/components/organisms/experiences-section";
+import JobTitle from "@/app/components/organisms/job-title";
+import Skills from "@/app/components/organisms/skills";
 import {Experience} from "@/app/types/experience";
 
 export default class Index extends Component {
@@ -38,13 +40,15 @@ export default class Index extends Component {
     render(): ReactNode {
         return (
             <Layout>
-                <div className={"container md:mx-auto"}>
+                <JobTitle />
+
+                <Skills />
+                <div className="container md:mx-auto">
                     <ExperiencesSection experiences={this.experiencesArray} />
                 </div>
-                <div className={"flex justify-center"}>
+                <div className="flex justify-center">
                     <ContactForm />
                 </div>
-
             </Layout>
         )
     }

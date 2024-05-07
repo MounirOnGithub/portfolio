@@ -11,9 +11,11 @@ export default function RootLayout({
 }) {
   return (
     <div className={robotoSlab.className}>
-    <Navbar />
-      <div>
-          {children}
+      <div className="bg-[#fff7f2]">
+        <Navbar />
+        <div>
+            {children}
+        </div>
       </div>
     </div>
   )

@@ -5,7 +5,7 @@ export default class ExperienceCard extends Component<{ experience: Experience}>
     render() {
         return (
             <div className={"md:flex-1 mx-auto shadow-xl w-80 rounded p-10"}>
-                <h2 className={"text-sky-600 font-bold"}>
+                <h2 className={"font-bold"}>
                     {this.props.experience.title}
                 </h2>
 

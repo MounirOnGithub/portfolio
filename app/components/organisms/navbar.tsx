@@ -15,9 +15,12 @@ function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
 }
 
+// ancien colors
+// bg: bg-sky-600 hover:bg-sky-700 et current: bg-sky-900 text: text-gray-200
+
 export default function Navbar() {
     return (
-        <Disclosure as="nav" className="bg-sky-600">
+        <Disclosure as="nav" className="">
             {({ open }) => (
                 <>
                     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -35,12 +38,13 @@ export default function Navbar() {
                                 </Disclosure.Button>
                             </div>
                             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                                <div className="flex flex-shrink-0 items-center">
+                                <div className="flex flex-shrink-0 items-center font-bold">
                                     {/*<Image
                                         className="h-8 w-auto"
                                         src={logo}
                                         alt="Your Company"
                                     />*/}
+                                    Mounir.K
                                 </div>
                                 <div className="hidden sm:ml-6 sm:block">
                                     <div className="flex space-x-4">
@@ -50,7 +54,7 @@ export default function Navbar() {
                                                 key={item.name}
                                                 href={item.href}
                                                 className={classNames(
-                                                    item.current ? 'bg-sky-900 text-white' : 'text-gray-200 hover:bg-sky-700 hover:text-white',
+                                                    item.current ? '' : '',
                                                     'rounded-md px-3 py-2 text-sm font-medium'
                                                 )}
                                                 aria-current={item.current ? 'page' : undefined}
@@ -139,7 +143,7 @@ export default function Navbar() {
                                     as="a"
                                     href={item.href}
                                     className={classNames(
-                                        item.current ? 'bg-sky-900 text-white' : 'text-gray-200 hover:bg-sky-700 hover:text-white',
+                                        item.current ? '' : '',
                                         'block rounded-md px-3 py-2 text-base font-medium'
                                     )}
                                     aria-current={item.current ? 'page' : undefined}
