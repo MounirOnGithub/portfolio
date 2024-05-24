@@ -1,7 +1,7 @@
 import { Component, ReactNode } from "react";
 import Layout from "../app/layout"
 import ContactForm from "../app/components/molecules/contact-form";
-import ExperiencesSection from "@/app/components/organisms/experiences-section";
+import ExperiencesSection from "@/app/components/organisms/experiences";
 import JobTitle from "@/app/components/organisms/job-title";
 import Skills from "@/app/components/organisms/skills";
 import {Experience} from "@/app/types/experience";

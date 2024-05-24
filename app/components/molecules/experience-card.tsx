@@ -4,7 +4,7 @@ import {Experience} from "@/app/types/experience";
 export default class ExperienceCard extends Component<{ experience: Experience}> {
     render() {
         return (
-            <div className={"md:flex-1 mx-auto shadow-xl w-80 rounded p-10"}>
+            <div className={"md:flex-1 mx-auto border-2 border-gray-400 w-80 rounded p-10"}>
                 <h2 className={"font-bold"}>
                     {this.props.experience.title}
                 </h2>

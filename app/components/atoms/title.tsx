@@ -9,7 +9,7 @@ export default class Title extends Component<{ title: string }> {
                   items-center
                   text-3xl
                   font-bold
-                  my-6
+                  my-8
                 "
             >
                 {this.props.title}
